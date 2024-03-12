@@ -1297,9 +1297,18 @@ body {
     .contacts h2{
         font-size: 50px;
     }
+    .contact-list{
+        margin: 0px;
+    }
     .contact-list i{
         font-size: 13px;
         padding: 5px 5px 0 0;
+    }
+    .contact-icons {
+        display: grid;
+        justify-content: center;
+        gap: 25px;
+        margin: 20px 0px;
     }
     .top{
         position: fixed;
