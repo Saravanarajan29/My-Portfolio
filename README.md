@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Portfolio Website Preview](portfolio-preview.png)
+![Portfolio Website Preview]()
 
 ## Overview
 Welcome to my portfolio website repository! This website showcases my skills, projects, and experiences as a web developer. Feel free to explore the various sections to learn more about me and my work.
@@ -32,4 +32,4 @@ Feel free to customize this portfolio website template to showcase your own proj
 
 ## Author
 
-Developed by ## Saravanarajan
+Developed by **Saravanarajan**
