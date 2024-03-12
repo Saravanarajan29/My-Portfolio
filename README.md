@@ -32,4 +32,4 @@ Feel free to customize this portfolio website template to showcase your own proj
 
 ## Author
 
-Developed by **Saravanarajan**
+Developed by **Saravanarajan**.
