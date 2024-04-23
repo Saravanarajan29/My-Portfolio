@@ -17,3 +17,32 @@ window.addEventListener("scroll",() =>{
         toTop.classList.remove("active");
     }
 })
+
+function sendMail(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+    const serviceID = "service_04r37xh";
+    const templateID = "template_atisenq";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("Your message sent successfully");
+        })
+        .catch(err => console.error("Error sending email:", err));
+}
+
+document.getElementById("contactForm").addEventListener("submit", sendMail);
+
+

@@ -9,7 +9,17 @@
         <link rel="stylesheet" href='./Assets/style.css'>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+        emailjs.init({
+        publicKey: "TqdISMygqylwOV_me",
+        });
+        })();
+        </script>
     </head>
     <body>
         
@@ -42,6 +52,7 @@
                     <a href="https://www.linkedin.com/in/saravana-rajan-025072214/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://www.instagram.com/srxvxn_01/"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
                     <a href="https://github.com/Saravanarajan29"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=8610351477" style="--i:10" target="_blank"><i class='bx bxl-whatsapp'></i></a>
                 </div>
                 <a href="https://drive.google.com/file/d/1qoNFSIPEXX3ms5597v0sM83_Xa0FHwUp/view?usp=sharing" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
             </div>
@@ -249,20 +260,20 @@
                     <li><i class="bx bxs-phone-call" ></i>8610351477</li>
                 </div>
                 <div class="contact-icons">
-                    <a href=""><i class="bx bxl-linkedin"></i></a>
-                    <a href=""><i class="bx bxl-instagram"></i></a>
-                    <a href=""><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saravana-rajan-025072214/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/srxvxn_01/"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/Saravanarajan29"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=8610351477" style="--i:10" target="_blank"><i class='bx bxl-whatsapp'></i></a>
                 </div>
             </div>
 
             <div class="contact-form">
-                <form action="">
-                    <input type="" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email" required>
-
-                    <input type="" placeholder="Enter Your Subject">
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                    <input type="submit" value="submit" class="send">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="text" id="subject" placeholder="Enter Your Subject">
+                    <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                    <input type="submit" class="send" value="Send">
                 </form>
             </div>
             
